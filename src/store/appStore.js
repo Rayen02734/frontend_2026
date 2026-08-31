@@ -10,7 +10,6 @@ const initialUser = {
 
 const useAppStore = create((set, get) => ({
   activeRole: 'student',
-  theme: 'light',
   language: defaultLanguage,
   currentUser: initialUser,
   cart: [],
@@ -18,7 +17,6 @@ const useAppStore = create((set, get) => ({
   setLanguage: (language) => set({ language }),
   setCurrentUser: (user) => set({ currentUser: user, activeRole: user.role }),
   logout: () => set({ currentUser: null, activeRole: 'student' }),
-  toggleTheme: () => set((state) => ({ theme: state.theme === 'light' ? 'dark' : 'light' })),
   addToCart: (course) => {
     const existing = get().cart.find((item) => item.id === course.id);
     if (existing) {

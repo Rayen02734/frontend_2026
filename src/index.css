@@ -3,54 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --page-bg: #ffffff;
-  --page-bg-strong: #ffffff;
-  --panel-bg: #ffffff;
-  --panel-alt: #ffffff;
-  --text: #0f172a;
-  --text-soft: #475569;
-  --border: #e5e7eb;
   font-family: 'Inter', 'Segoe UI', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: var(--text);
-  background: var(--page-bg);
+  color: #0f172a;
+  background: #f8fafc;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html.dark {
-  --page-bg: #000000;
-  --page-bg-strong: #000000;
-  --panel-bg: #000000;
-  --panel-alt: #000000;
-  --text: #ffffff;
-  --text-soft: #d1d5db;
-  --border: rgba(255, 255, 255, 0.12);
-}
-
 html {
   scroll-behavior: smooth;
-  background: #ffffff;
-}
-
-html.dark {
-  background: #000000;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(180deg, var(--page-bg) 0%, var(--page-bg-strong) 100%);
-  color: var(--text);
-}
-
-html.dark body {
-  background: linear-gradient(180deg, #000000 0%, #000000 100%);
-  color: #ffffff;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef6ff 100%);
 }
 
 * {
@@ -61,77 +33,17 @@ html.dark body {
   min-height: 100vh;
 }
 
-html:not(.dark) .bg-slate-50,
-html:not(.dark) .bg-slate-100,
-html:not(.dark) .bg-slate-200,
-html:not(.dark) .bg-slate-300,
-html:not(.dark) .bg-slate-800,
-html:not(.dark) .bg-slate-900,
-html:not(.dark) .bg-slate-950,
-html:not(.dark) .bg-white {
-  background-color: #ffffff !important;
-}
-
-html.dark .bg-slate-50,
-html.dark .bg-slate-100,
-html.dark .bg-slate-200,
-html.dark .bg-slate-300,
-html.dark .bg-slate-800,
-html.dark .bg-slate-900,
-html.dark .bg-slate-950,
-html.dark .bg-white {
-  background-color: #000000 !important;
-}
-
-html:not(.dark) .text-slate-500,
-html:not(.dark) .text-slate-600,
-html:not(.dark) .text-slate-700,
-html:not(.dark) .text-slate-800,
-html:not(.dark) .text-slate-900 {
-  color: #0f172a !important;
-}
-
-html.dark .text-slate-500,
-html.dark .text-slate-600,
-html.dark .text-slate-700,
-html.dark .text-slate-800,
-html.dark .text-slate-900 {
-  color: #ffffff !important;
-}
-
-html.dark .border-slate-200,
-html.dark .border-slate-300,
-html.dark .border-slate-700,
-html.dark .border-slate-800,
-html.dark .border-slate-900 {
-  border-color: rgba(255, 255, 255, 0.12) !important;
-}
-
-html:not(.dark) .border-slate-200,
-html:not(.dark) .border-slate-300,
-html:not(.dark) .border-slate-700,
-html:not(.dark) .border-slate-800,
-html:not(.dark) .border-slate-900 {
-  border-color: #e5e7eb !important;
-}
-
 @layer components {
   .container-shell {
     @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
   }
 
   .card-surface {
-    @apply rounded-2xl border shadow-soft;
-    background: var(--panel-bg);
-    border-color: var(--border);
-    color: var(--text);
+    @apply rounded-2xl border border-slate-200 bg-white shadow-soft;
   }
 
   .badge {
-    @apply inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-medium;
-    background: var(--panel-alt);
-    border-color: var(--border);
-    color: var(--text-soft);
+    @apply inline-flex items-center rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700;
   }
 }
 

@@ -5,6 +5,7 @@ import LandingPage from '../pages/LandingPage';
 import CoursesPage from '../pages/CoursesPage';
 import AboutPage from '../pages/AboutPage';
 import LoginPage from '../pages/LoginPage';
+import SignInPage from '../pages/SignInPage';
 import StudentDashboardPage from '../pages/student/StudentDashboardPage';
 import StudentCoursesPage from '../pages/student/StudentCoursesPage';
 import StudentSessionsPage from '../pages/student/StudentSessionsPage';
@@ -54,6 +55,7 @@ const router = createBrowserRouter([
             { path: 'courses', element: <CoursesPage /> },
             { path: 'about', element: <AboutPage /> },
             { path: 'login', element: <LoginPage /> },
+            { path: 'signin', element: <SignInPage /> },
             {
                 path: 'student',
                 element: <DashboardLayout />,
