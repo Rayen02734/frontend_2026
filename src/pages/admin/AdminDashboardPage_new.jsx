@@ -65,8 +65,8 @@ export default function AdminDashboardPage() {
                         {recentActivity.map((activity, idx) => (
                             <div key={idx} className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
                                 <div className={`rounded-lg p-2 ${activity.type === 'Alerte' ? 'bg-rose-100 text-rose-700' :
-                                    activity.type === 'Paiement' ? 'bg-emerald-100 text-emerald-700' :
-                                        'bg-blue-100 text-blue-700'
+                                        activity.type === 'Paiement' ? 'bg-emerald-100 text-emerald-700' :
+                                            'bg-blue-100 text-blue-700'
                                     }`}>
                                     {activity.type === 'Alerte' ? <AlertCircle className="h-5 w-5" /> :
                                         activity.type === 'Paiement' ? <DollarSign className="h-5 w-5" /> :
@@ -196,8 +196,8 @@ export default function AdminDashboardPage() {
                         {
                             key: 'status', label: 'Vérification', render: (val) =>
                                 <span className={`inline-block px-2 py-1 rounded text-xs font-medium ${val === 'Vérifiée' ? 'bg-emerald-100 text-emerald-700' :
-                                    val === 'En vérification' ? 'bg-amber-100 text-amber-700' :
-                                        'bg-rose-100 text-rose-700'
+                                        val === 'En vérification' ? 'bg-amber-100 text-amber-700' :
+                                            'bg-rose-100 text-rose-700'
                                     }`}>{val}</span>
                         },
                     ]}

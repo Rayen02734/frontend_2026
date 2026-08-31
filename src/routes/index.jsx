@@ -18,6 +18,7 @@ import InstructorSessionsPage from '../pages/instructor/InstructorSessionsPage';
 import InstructorQuizzesPage from '../pages/instructor/InstructorQuizzesPage';
 import InstructorStudentsPage from '../pages/instructor/InstructorStudentsPage';
 import AdminDashboardPage from '../pages/admin/AdminDashboardPage';
+import AdminAiAnalyticsPage from '../pages/admin/AdminAiAnalyticsPage';
 import AdminUsersPage from '../pages/admin/AdminUsersPage';
 import AdminCoursesPage from '../pages/admin/AdminCoursesPage';
 import AdminPaymentsPage from '../pages/admin/AdminPaymentsPage';
@@ -84,6 +85,7 @@ const router = createBrowserRouter([
                 element: <DashboardLayout />,
                 children: [
                     { path: 'dashboard', element: <AdminDashboardPage /> },
+                    { path: 'ai-analytics', element: <AdminAiAnalyticsPage /> },
                     { path: 'users', element: <AdminUsersPage /> },
                     { path: 'courses', element: <AdminCoursesPage /> },
                     { path: 'payments', element: <AdminPaymentsPage /> },

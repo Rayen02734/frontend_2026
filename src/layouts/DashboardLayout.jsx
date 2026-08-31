@@ -22,6 +22,7 @@ const instructorNav = [
 
 const adminNav = [
     { to: '/admin/dashboard', labelKey: 'tableTitle', icon: LayoutDashboard },
+    { to: '/admin/ai-analytics', labelKey: 'aiAgent', icon: MessageSquareText },
     { to: '/admin/users', labelKey: 'users', icon: Users },
     { to: '/admin/courses', labelKey: 'courses', icon: BookOpen },
     { to: '/admin/payments', labelKey: 'payments', icon: CreditCard },
