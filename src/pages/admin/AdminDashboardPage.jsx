@@ -1,5 +1,5 @@
 import { DollarSign, ShieldCheck, UserRoundCheck, Users } from 'lucide-react';
-import AdminAiAnalysisPanel from '../../components/AdminAiAnalysisPanel';
+import AdminAiAnalys from 'AdminAiAnalyticsPage' ;
 import { progressData } from '../../data/progress';
 
 const stats = [
